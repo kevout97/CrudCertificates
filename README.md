@@ -6,4 +6,4 @@
 - pip install flask-mysqldb
 
 # issues
-- sudo apt-get install libmysqlclient-dev
+- sudo yum install mariadb-devel
