@@ -1,5 +1,4 @@
-# Screenshot
-![](docs/screenshot.png)
+# Crud Certificates
 
 # install dependencies
 - pip install flask
