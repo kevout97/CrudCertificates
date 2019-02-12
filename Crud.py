@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mysqldb import MySQL
-
+import sys
 # initializations
 app = Flask(__name__)
 
 # Mysql Connection
-app.config['MYSQL_HOST'] = 'localhost' 
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_HOST'] = sys.argv[1] 
+app.config['MYSQL_USER'] = sys.argv[2]
+app.config['MYSQL_PASSWORD'] = sys.argv[3]
 app.config['MYSQL_DB'] = 'crud_certificates'
 mysql = MySQL(app)
 
